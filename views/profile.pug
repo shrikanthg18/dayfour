@@ -1,0 +1,35 @@
+doctype html
+html
+	div(style="margin-left: 100px")
+		h1 User Profile
+		form(method="post", action="/profile/profilepost")
+			label First name : 
+			input(type="text", name="fname" ,placeholder="Raj", align="right")
+			br
+			br
+			label Last name : 
+			input(type="text", name="lname"  ,placeholder="Kumar S", align="right")
+			br
+			br
+			label Address : 
+			input(type="text", name="address"  ,placeholder="2nd street, Koramangla", align="right")
+			br
+			br
+			label Date of birth : 
+			input(type="date", name="dob"  ,placeholder="DOB", align="right")
+			br
+			br
+			label Phone no : 
+			input(type="number", name="phno"  ,placeholder="valid Ph no.", align="right")
+			br
+			br
+			button Submit
+		//-
+			h1 Get Full Name
+			h3 Search by ID
+			form(method="get", action=formAction)
+				label Enter id : 
+				input(type="text", name="userId"  ,placeholder="ex,. 61dc7657d565ed8695978b20", style="width:230px", align="right")
+				br
+				br
+				button Submit
